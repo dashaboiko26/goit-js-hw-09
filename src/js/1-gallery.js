@@ -1,4 +1,3 @@
-
 import SimpleLightbox from 'simplelightbox';
 
 import 'simplelightbox/dist/simple-lightbox.min.css';
@@ -69,7 +68,6 @@ const images = [
   },
 ];
 
-
 function createGalleryImgs(images) {
   return images
     .map(
@@ -84,9 +82,7 @@ function createGalleryImgs(images) {
     .join('');
 }
 
-
 const galleryList = document.querySelector('.gallery');
-
 
 galleryList.insertAdjacentHTML('beforeend', createGalleryImgs(images));
 
